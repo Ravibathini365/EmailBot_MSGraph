@@ -1,0 +1,12 @@
+---
+- hosts: localhost 
+  become: true
+
+  tasks:
+  - name: Check the status of Service
+    command: systemctl status node_exporter.service
+    register: sys_output
+
+  - debug: msg="{{ sys_output.stdout_lines }}"
+  - debug: msg="{{ sys_output.stderr_lines }}"
+    

@@ -1,0 +1,5 @@
++ bwd=/home/rab/Test
++ bcd=/home/rab/Test/botcmds
++ cd /home/rab/Test
++ '[' -s /home/rab/Test/email.log ']'
++ exit 1

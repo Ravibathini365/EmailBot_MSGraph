@@ -1,0 +1,4 @@
+nodeexporter|node_exporter.service
+blackboxexporter|backbox_exporter.service
+elastic|elastic_service
+fluent|td_agent.service

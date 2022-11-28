@@ -1,0 +1,138 @@
++ cwd=/Users/RaB/Runbooks/Infra_Email_bot
++ cd /Users/RaB/Runbooks/Infra_Email_bot
++ cat /Users/RaB/Runbooks/Infra_Email_bot/email.log
++ /usr/local/bin/jq -c '.|.value[]|.subject'
++ cat /Users/RaB/Runbooks/Infra_Email_bot/email.log
++ /usr/local/bin/jq -c '.|.value[]|.sender'
++ paste subj.tmp sender.tmp
++ tr '\t' '|'
++ cat /Users/RaB/Runbooks/Infra_Email_bot/email.tmp
++ read line
+++ echo '"Infrabot"|{"emailAddress":{"name":"B,' 'Ravi","address":"RaB@mast.com"}}'
+++ cut -d '|' -f1
++ sub='"Infrabot"'
+++ echo '"Infrabot"|{"emailAddress":{"name":"B,' 'Ravi","address":"RaB@mast.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=RaB@mast.com
++ echo '"Infrabot"'
++ grep -i infrabot
+"Infrabot"
++ email RaB@mast.com '"Infrabot"'
++ echo To: RaB@mast.com
++ echo From: rv.infrabot@lb.com
++ echo 'Content-Type: text/html; '
++ echo Subject: '"Infrabot"'
++ echo -e 'Hi from RV.Infrabot !!'
++ /usr/sbin/sendmail -t
++ read line
+++ echo '"[External]' Lumen Scheduled Maintenance '#:' 23096800, 'Postponed"|{"emailAddress":{"name":"No-Reply@Lumen.com","address":"No-Reply@Lumen.com"}}'
+++ cut -d '|' -f1
++ sub='"[External] Lumen Scheduled Maintenance #: 23096800, Postponed"'
+++ echo '"[External]' Lumen Scheduled Maintenance '#:' 23096800, 'Postponed"|{"emailAddress":{"name":"No-Reply@Lumen.com","address":"No-Reply@Lumen.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=No-Reply@Lumen.com
++ echo '"[External]' Lumen Scheduled Maintenance '#:' 23096800, 'Postponed"'
++ grep -i infrabot
++ read line
+++ echo '"[External]' SWITCH Courtesy Access Notification - Switch Ticket '20220225-141"|{"emailAddress":{"name":"support@switch.com","address":"support@switch.com"}}'
+++ cut -d '|' -f1
++ sub='"[External] SWITCH Courtesy Access Notification - Switch Ticket 20220225-141"'
+++ echo '"[External]' SWITCH Courtesy Access Notification - Switch Ticket '20220225-141"|{"emailAddress":{"name":"support@switch.com","address":"support@switch.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=support@switch.com
++ echo '"[External]' SWITCH Courtesy Access Notification - Switch Ticket '20220225-141"'
++ grep -i infrabot
++ read line
+++ echo '"DIC2/nginx-exproxy-infra-prod' - Pull request '#1:' adding 'artifactory"|{"emailAddress":{"name":"VSD' 'Stash","address":"stash@victoriassecret.com"}}'
+++ cut -d '|' -f1
++ sub='"DIC2/nginx-exproxy-infra-prod - Pull request #1: adding artifactory"'
+++ echo '"DIC2/nginx-exproxy-infra-prod' - Pull request '#1:' adding 'artifactory"|{"emailAddress":{"name":"VSD' 'Stash","address":"stash@victoriassecret.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=stash@victoriassecret.com
++ echo '"DIC2/nginx-exproxy-infra-prod' - Pull request '#1:' adding 'artifactory"'
++ grep -i infrabot
++ read line
+++ echo '"[JIRA]' Updates for INFRA-16883: south india location enable in 'cloud"|{"emailAddress":{"name":"Katta,' Srujana '(VSDJIRA)","address":"vsdjira@lb.com"}}'
+++ cut -d '|' -f1
++ sub='"[JIRA] Updates for INFRA-16883: south india location enable in cloud"'
+++ echo '"[JIRA]' Updates for INFRA-16883: south india location enable in 'cloud"|{"emailAddress":{"name":"Katta,' Srujana '(VSDJIRA)","address":"vsdjira@lb.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=vsdjira@lb.com
++ echo '"[JIRA]' Updates for INFRA-16883: south india location enable in 'cloud"'
++ grep -i infrabot
++ read line
+++ echo '"You' have 1 mention, 2 'posts"|{"emailAddress":{"name":"There'\''s' new activity in 'Teams","address":"noreply@email.teams.microsoft.com"}}'
+++ cut -d '|' -f1
++ sub='"You have 1 mention, 2 posts"'
+++ echo '"You' have 1 mention, 2 'posts"|{"emailAddress":{"name":"There'\''s' new activity in 'Teams","address":"noreply@email.teams.microsoft.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=noreply@email.teams.microsoft.com
++ echo '"You' have 1 mention, 2 'posts"'
++ grep -i infrabot
++ read line
+++ echo '"ALERT"|{"emailAddress":{"name":"vsetoinfra.alertmanager@lb.com","address":"vsetoinfra.alertmanager@lb.com"}}'
+++ cut -d '|' -f1
++ sub='"ALERT"'
+++ echo '"ALERT"|{"emailAddress":{"name":"vsetoinfra.alertmanager@lb.com","address":"vsetoinfra.alertmanager@lb.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=vsetoinfra.alertmanager@lb.com
++ echo '"ALERT"'
++ grep -i infrabot
++ read line
+++ echo '"ALERT"|{"emailAddress":{"name":"vsetoinfra.alertmanager@lb.com","address":"vsetoinfra.alertmanager@lb.com"}}'
+++ cut -d '|' -f1
++ sub='"ALERT"'
+++ echo '"ALERT"|{"emailAddress":{"name":"vsetoinfra.alertmanager@lb.com","address":"vsetoinfra.alertmanager@lb.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=vsetoinfra.alertmanager@lb.com
++ echo '"ALERT"'
++ grep -i infrabot
++ read line
+++ echo '"Re:' Welcome Sudhanshu 'Tiwari"|{"emailAddress":{"name":"Tiwari,' 'Sudhanshu","address":"SDTiwari@victoria.com"}}'
+++ cut -d '|' -f1
++ sub='"Re: Welcome Sudhanshu Tiwari"'
+++ echo '"Re:' Welcome Sudhanshu 'Tiwari"|{"emailAddress":{"name":"Tiwari,' 'Sudhanshu","address":"SDTiwari@victoria.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=SDTiwari@victoria.com
++ echo '"Re:' Welcome Sudhanshu 'Tiwari"'
++ grep -i infrabot
++ read line
+++ echo '"[External]' MaxMind Payment Info 'Changed"|{"emailAddress":{"name":"support@maxmind.com","address":"support@maxmind.com"}}'
+++ cut -d '|' -f1
++ sub='"[External] MaxMind Payment Info Changed"'
+++ echo '"[External]' MaxMind Payment Info 'Changed"|{"emailAddress":{"name":"support@maxmind.com","address":"support@maxmind.com"}}'
+++ cut -d '|' -f2
+++ cut -d : -f4
+++ sed 's/"//g'
+++ sed 's/}}//'
++ sender=support@maxmind.com
++ echo '"[External]' MaxMind Payment Info 'Changed"'
++ grep -i infrabot
++ read line

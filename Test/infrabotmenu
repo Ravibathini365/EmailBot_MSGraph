@@ -1,0 +1,2 @@
+MENU|This will give you the list of Bot commands that is enabled at this moment. Usage: INFRABOT MENU
+GETJENKINSJOB|This command will give you the all Jenkins Job which are hosted in ETO subscription. Usage: INFRABOT GETJENKINSJOB
